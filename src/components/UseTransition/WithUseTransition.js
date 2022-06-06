@@ -19,8 +19,8 @@ export default function WithUseTranstion() {
         <div>
             <h2>With transition</h2>
             <ul>
-                <li>fastKeyword :{fastKeyword}</li>
-                <li>slowKeyword :{slowKeyword}</li>
+                <li>Keyword(using useState) :{fastKeyword}</li>
+                <li>Keyword(using useState + useTransition) :{slowKeyword}</li>
             </ul>
 
             <input onKeyUp={handleInputKeyUp} />

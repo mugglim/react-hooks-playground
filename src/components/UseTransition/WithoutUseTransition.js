@@ -14,8 +14,8 @@ export default function WithoutUseTranstion() {
         <div>
             <h2>Without transition</h2>
             <ul>
-                <li>fastKeyword :{fastKeyword}</li>
-                <li>slowKeyword :{slowKeyword}</li>
+                <li>Keyword(using useState) :{fastKeyword}</li>
+                <li>Keyword(using useState) :{slowKeyword}</li>
             </ul>
 
             <input onKeyUp={handleInputKeyUp} />

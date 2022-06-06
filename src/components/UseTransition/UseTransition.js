@@ -6,10 +6,12 @@ export default function UseTransition() {
             <h1>use-transition</h1>
             <ul>
                 <li>
-                    <Link to="/use-transition/">With UseTransition</Link>
+                    <Link to="/use-transition">Without UseTransition</Link>
                 </li>
                 <li>
-                    <Link to="/use-transition/without">With UseTransition</Link>
+                    <Link to="/use-transition/activation">
+                        With UseTransition
+                    </Link>
                 </li>
             </ul>
 

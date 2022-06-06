@@ -21,10 +21,10 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/use-transition/*" element={<UseTransition />}>
-                        <Route path="" element={<WithUseTransition />} />
+                        <Route path="" element={<WithoutUseTransition />} />
                         <Route
-                            path="without"
-                            element={<WithoutUseTransition />}
+                            path="activation"
+                            element={<WithUseTransition />}
                         />
                     </Route>
                 </Routes>
