@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import UseTranstion from './components/use-transition';
+import SideBar from './components/SideBar';
+import S from './style';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+	return (
+		<S.App>
+			<S.LeftBox>
+				<SideBar />
+			</S.LeftBox>
+
+			<S.RightBox>
+				<Routes>
+					<Route path='use-transition' element={<UseTranstion />} />
+				</Routes>
+			</S.RightBox>
+		</S.App>
+	);
 }
-
-export default App;
